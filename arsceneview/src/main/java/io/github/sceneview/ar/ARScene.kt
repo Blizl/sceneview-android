@@ -48,7 +48,7 @@ fun ARScene(
                 nodes.filter { it !in sceneViewNodes }.forEach {
                     sceneView.addChild(it)
                 }
-                sceneViewNodes = nodes
+                sceneViewNodes = nodes.toList()
 
                 sceneView.planeRenderer.isEnabled = planeRenderer
             }
